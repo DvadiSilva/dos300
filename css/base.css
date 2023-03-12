@@ -111,3 +111,8 @@ body{
 
 .product-card{height: 55vh;}
 .product-card:hover{box-shadow: 10px 10px 5px var(--yellow-light);}
+
+/*Register*/
+@media (min-width:992px){
+    .registerContainer{max-width: 950px; max-height: 660px;}
+}

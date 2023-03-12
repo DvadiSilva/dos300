@@ -77,7 +77,7 @@
                 </form>
 
                 <div class="d-flex justify-content-around align-items-center">
-                    <li class="nav-item dropdown dropend">
+                    <li class="nav-item dropdown dropend" title="'.$_SESSION["user"]["username"].'">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="w-75 home-profile border border-dark" src="/images/random/defaultUserPic.png">
                         </a>
@@ -120,4 +120,4 @@
     }
 ?>
         </nav>
-            <main class="py-4 container">
+            <main class="py-4 container main">
