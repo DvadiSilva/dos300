@@ -27,7 +27,7 @@
         $message= "Invalid URL";
         $title= "Error";
 
-        require("views/view.error.php");
+        require("views/layouts/view.error.php");
         exit;
     }
     

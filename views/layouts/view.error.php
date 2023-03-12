@@ -1,5 +1,5 @@
 <?php
-    require("layouts/headerSimple.php");
+    require("view.headerSimple.php");
 ?>
 
 <div id="errorContainer" class="alert alert-primary d-flex align-items-center" role="alert">
@@ -12,6 +12,6 @@
 </div>
 
 <?php
-    require("layouts/footer.php");
-    ?>
+    require("view.footer.php");
+?>
 

@@ -22,6 +22,14 @@
                 
                 header("Location: /");
                 exit;
+            }else{
+                http_response_code(500);
+            
+                $message= "Internal Server Error";
+                $title= "Error";
+
+                require("views/layouts/view.error.php");
+                exit;
             }
         }
         $message= "Dados incorretos, confirme o preenchimento do email ou password";

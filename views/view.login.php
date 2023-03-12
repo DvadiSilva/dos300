@@ -17,7 +17,7 @@
 
           <form style="width: 23rem;" action="/login" method="post">
 
-            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login</h3>
 
             <div class="form-outline mb-4">
               <input type="email" id="form2Example18" class="form-control form-control-lg" name="email" required/>

@@ -29,6 +29,16 @@
             </li>
         ';
     }
+    if($controller==="register"){
+        echo '
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="/login" role="button">
+                    <img class="" src="/images/random/login-icon.png">
+                    Login
+                </a>
+            </li>
+        ';
+    }
 ?>
                 </ul>
             </div>
