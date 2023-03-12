@@ -18,7 +18,7 @@
             <ul class="navbar-nav align-items-center d-flex justify-content-between w-100">
                 <li class="nav-item">
                     <a class="nav-link p-0" href="/">
-                        <img src="/images/random/300_logo.png" alt="home" class="home-logo">
+                        <img src="/images/random/300_logo_clean.png" alt="home" class="home-logo">
                     </a>
                 </li>
                 <form class="d-flex align-items-center w-50" role="search">
@@ -64,7 +64,7 @@
             <ul class="navbar-nav align-items-center d-flex justify-content-between w-100">
                 <li class="nav-item">
                     <a class="nav-link p-0" href="/">
-                        <img src="/images/random/300_logo.png" alt="home" class="home-logo">
+                        <img src="/images/random/300_logo_clean.png" alt="home" class="home-logo">
                     </a>
                 </li>
                 <form class="d-flex align-items-center w-50" role="search">
@@ -120,4 +120,4 @@
     }
 ?>
         </nav>
-            <main class="py-4 container">   
+            <main class="py-4 container">

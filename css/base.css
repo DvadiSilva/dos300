@@ -8,7 +8,7 @@
 --orange: #fe773c;
 --orange-dark: #b35228;
 --brown:#5d2710;
---brown-faded:
+--brown-faded:#5d2710c4;
 --pink: #ff83a8;
 }
 body{
@@ -20,6 +20,14 @@ body{
 }
 .my-button:hover{
     background-color: var(--orange-dark);
+}
+
+.my-button-2{
+    background-color: var(--yellow-dark);
+}
+.my-button-2:hover{
+    background-color: var(--brown);
+    color: #fff;
 }
 
 .btn-link{color:var(--orange-dark)}
