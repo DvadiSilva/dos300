@@ -48,7 +48,7 @@
     <?php
         foreach($categories as $category){
             echo '
-                <a href="/products/'.$category["url_name"].'" class="nav-link d-flex flex-column align-items-center">
+                <a href="/products/1/'.$category["url_name"].'" class="nav-link d-flex flex-column align-items-center">
                     <img src="'.$category["image"].'" alt="" class="home-balloon border border-dark">
                     '.$category["name"].'
                 </a>

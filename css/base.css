@@ -79,7 +79,7 @@ body{
 
 /*Home*/
 .home-logo{
-    width: 8vw; min-width: 85px; max-width: 120px;
+    width: 7vw; min-width: 105px; max-width: 115px;
 }
 .home-nav{
     background-image: linear-gradient(to right,var(--yellow),var(--yellow-light));
