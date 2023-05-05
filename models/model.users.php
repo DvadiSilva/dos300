@@ -28,6 +28,7 @@
             return [];
         }
 
+        //get
         public function getAllUsers(){
             $query= $this-> db-> prepare("
                 SELECT
@@ -39,6 +40,23 @@
             $query-> execute();
 
             return $query-> fetchAll();
+        }
+
+        public function getUserPassword($data){
+            $data= $this-> sanitizer($data);
+
+            $query= $this-> db-> prepare("
+                SELECT
+                    password
+                FROM
+                    users
+                WHERE
+                    user_id= ?
+            ");
+
+            $query-> execute([$data["user_id"]]);
+
+            return $query-> fetch();
         }
 
         public function create($data){
@@ -76,5 +94,66 @@
             $query-> execute([$lastCreatedUserId]);
 
             return $query-> fetch();
+        }
+
+        //Update
+        public function updatePassword($data){
+            $data= $this-> sanitizer($data);
+
+            $query= $this-> db-> prepare("
+                UPDATE 
+                    users
+                SET
+                    password= ?
+                WHERE
+                    user_id= ?
+            ");
+
+            $query-> execute([
+                password_hash($data["newPassword"], PASSWORD_DEFAULT),
+                $data["user_id"]
+            ]);
+
+            return $query-> rowCount();
+        }
+
+        public function updateProfile($data){
+            $data= $this-> sanitizer($data);
+
+            $query= $this-> db-> prepare("
+                UPDATE 
+                    users
+                SET
+                    name= ?, username= ?, email= ?, phone= ?, biografy= ?, photo= ?
+                WHERE
+                    user_id= ?
+            ");
+
+            $query-> execute([
+                $data["name"],
+                $data["username"],
+                $data["email"],
+                $data["phone"],
+                $data["biografy"],
+                $data["photo"],
+                $data["user_id"],
+            ]);
+
+            $query= $this-> db-> prepare("
+                SELECT 
+                    user_id, name, username, email, password, phone, photo, biografy, isSubscriber, isWriter, isAdmin
+                FROM 
+                    users
+                WHERE 
+                    user_id= ?
+            ");
+
+            $query-> execute([
+                $data["user_id"]
+            ]);
+
+            $user= $query-> fetch();
+
+            return $user;
         }
     }

@@ -2,3 +2,4 @@
 *.env*
 *newsletterEmail.php*
 *welcomeEmail.php*
+*changePassword.php*
